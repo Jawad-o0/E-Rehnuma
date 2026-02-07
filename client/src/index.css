@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* THEME: Deep Green Glass Morphism */
+:root {
+  --background: 160 80% 5%;
+  --foreground: 160 10% 98%;
+  --card: 160 50% 8% / 0.7;
+  --card-foreground: 160 10% 98%;
+  --card-border: 160 50% 20% / 0.5;
+  --primary: 160 80% 45%;
+  --border: 160 50% 15%;
+  --radius: 1rem;
+  --font-sans: 'Inter', sans-serif;
+  --font-urdu: 'Noto Nastaliq Urdu', serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground min-h-screen;
+  }
+
+  button,
+  a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card backdrop-blur-xl border border-card-border shadow-2xl;
+  }
+
+  /* REWRITTEN TO BE ERROR-FREE */
+  .glass-hover {
+    transition: all 0.4s ease;
+  }
+
+  .glass-hover:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: #22c55e;
+  }
+}
+
+@layer utilities {
+  .font-urdu {
+    font-family: var(--font-urdu), serif;
+  }
+}
+
+/* Metallic Effect for Home.tsx */
+@keyframes silver-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.metallic-shine {
+  background-size: 200% auto !important;
+  animation: silver-shine 4s linear infinite;
+}
+
+.search-glow {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
