@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white dark:bg-[#001a0f];
+  }
+}
+
+/* THEME: Deep Green Glass Morphism */
+:root {
+  --background: 210 40% 98%;
+  /* Slate-50 approx */
+  --foreground: 215 25% 27%;
+  /* Slate-900 approx */
+  --card: 0 0% 100% / 0.8;
+  --card-foreground: 215 25% 27%;
+  --card-border: 215 25% 27% / 0.1;
+  --primary: 160 84% 39%;
+  /* Emerald-700 approx */
+  --primary-foreground: 0 0% 100%;
+  --border: 215 25% 27% / 0.1;
+  --radius: 1rem;
+  --font-sans: 'Inter', sans-serif;
+  --font-urdu: 'Noto Nastaliq Urdu', serif;
+}
+
+.dark {
+  --background: 222 47% 4%;
+  /* Slate-950 approx */
+  --foreground: 210 40% 98%;
+  /* Slate-100 approx */
+  --card: 222 47% 6% / 0.8;
+  --card-foreground: 210 40% 98%;
+  --card-border: 160 84% 39% / 0.2;
+  --primary: 160 84% 45%;
+  /* Emerald-500 approx */
+  --primary-foreground: 222 47% 4%;
+  --border: 160 84% 39% / 0.2;
+}
+
+@layer base {
+  * {
+    @apply border-border transition-colors duration-300;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground min-h-screen transition-colors duration-300;
+  }
+
+  button,
+  a {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply bg-card backdrop-blur-xl border border-card-border shadow-2xl;
+  }
+
+  .glass-hover {
+    @apply transition-all duration-300;
+  }
+
+  .glass-hover:hover {
+    @apply bg-white/5 dark:bg-white/10 border-emerald-500;
+  }
+}
+
+@layer utilities {
+  .font-urdu {
+    font-family: var(--font-urdu), serif;
+  }
+}
+
+/* Metallic Effect for Home.tsx */
+@keyframes silver-shine {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.metallic-shine {
+  background-size: 200% auto !important;
+  animation: silver-shine 4s linear infinite;
+}
+
+.search-glow {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+}
