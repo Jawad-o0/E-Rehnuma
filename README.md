@@ -23,6 +23,7 @@
 | **Document Suitcase** | Dynamic checklists and "Mistakes to Avoid" modules for office readiness. |
 | **WhatsApp Bridge** | Instant sharing of procedural guides and document lists for community support. |
 | **Elderly Mode UX** | A high-focus mode that enlarges typography and transitions the interface into a single-step-per-page wizard to eliminate cognitive overload. |
+| **Global Emergency Utility** | Persistent footer integration of Edhi (115), Police (15), and Rescue (1122) for immediate crisis response. |
 
 ---
 
