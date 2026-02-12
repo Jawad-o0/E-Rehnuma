@@ -1,11 +1,9 @@
 import { services, steps, type Service, type Step, type ServiceWithSteps, type InsertService, type InsertStep } from "@shared/schema";
 import { db } from "./db";
-import { eq } from "drizzle-orm";
+import { eq, sql } from "drizzle-orm"; // Fixed: Combined imports
 import fs from "fs";
 import path from "path";
 import { parse } from "csv-parse/sync";
-// Add 'sql' to the list of imports from "drizzle-orm"
-import { eq, sql } from "drizzle-orm";
 
 export interface IStorage {
   getServices(type?: string): Promise<Service[]>;
@@ -45,10 +43,9 @@ export class DatabaseStorage implements IStorage {
     return newStep;
   }
 
-async seed(): Promise<void> {
+  async seed(): Promise<void> {
     try {
-      // FORCE CLEAR: This replaces the "if (existing)" check.
-      // It wipes the old 3 services so the new 12+ can be imported fresh.
+      // FORCE CLEAR: Wipes old data so the new 12+ services can be imported fresh
       await db.execute(sql`TRUNCATE TABLE services, steps RESTART IDENTITY CASCADE`);
       console.log("Old data cleared. Starting fresh import from CSV...");
 
@@ -60,18 +57,15 @@ async seed(): Promise<void> {
         return;
       }
 
-      // Read and parse services.csv
       const servicesRaw = fs.readFileSync(servicesPath, "utf-8");
       const serviceRecords = parse(servicesRaw, { columns: true, skip_empty_lines: true });
 
-      // Read and parse steps.csv
       const stepsRaw = fs.readFileSync(stepsPath, "utf-8");
       const stepRecords = parse(stepsRaw, { columns: true, skip_empty_lines: true });
 
       console.log(`Importing ${serviceRecords.length} services...`);
 
       for (const row of serviceRecords) {
-        // Insert the main service data 
         const newService = await this.createService({
           titleEn: row.title_en,
           titleUr: row.title_ur,
@@ -87,7 +81,6 @@ async seed(): Promise<void> {
           feeStructure: row.fee_structure || null,
         });
 
-        // Find and insert all steps belonging to this service 
         const matchingSteps = stepRecords.filter((s: any) => s.service_id === row.id);
         for (const s of matchingSteps) {
           await this.createStep({
@@ -106,5 +99,6 @@ async seed(): Promise<void> {
       console.error("Seeding failed:", error);
     }
   }
+} // Added missing closing bracket for the class
 
 export const storage = new DatabaseStorage();
