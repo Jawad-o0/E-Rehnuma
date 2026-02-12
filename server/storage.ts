@@ -4,6 +4,8 @@ import { eq } from "drizzle-orm";
 import fs from "fs";
 import path from "path";
 import { parse } from "csv-parse/sync";
+// Add 'sql' to the list of imports from "drizzle-orm"
+import { eq, sql } from "drizzle-orm";
 
 export interface IStorage {
   getServices(type?: string): Promise<Service[]>;
@@ -43,12 +45,13 @@ export class DatabaseStorage implements IStorage {
     return newStep;
   }
 
-  async seed(): Promise<void> {
-    const existing = await this.getServices();
-    // Prevent duplicate seeding if data already exists
-    if (existing.length > 0) return;
-
+async seed(): Promise<void> {
     try {
+      // FORCE CLEAR: This replaces the "if (existing)" check.
+      // It wipes the old 3 services so the new 12+ can be imported fresh.
+      await db.execute(sql`TRUNCATE TABLE services, steps RESTART IDENTITY CASCADE`);
+      console.log("Old data cleared. Starting fresh import from CSV...");
+
       const servicesPath = path.resolve(process.cwd(), "services.csv");
       const stepsPath = path.resolve(process.cwd(), "steps.csv");
 
@@ -103,6 +106,5 @@ export class DatabaseStorage implements IStorage {
       console.error("Seeding failed:", error);
     }
   }
-}
 
 export const storage = new DatabaseStorage();
