@@ -1,60 +1,57 @@
-# 🏛️ E-Sarkari Rehnuma (ای-سرکاری رہنما)
-**A Comprehensive AI-Powered Civic Assistant for Pakistan.**
+# E-SARKARI REHNUMA (ای-سرکاری رہنما)
+> **An AI-Powered Accessibility Framework for Public Service Navigation in Pakistan**
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-emerald.svg)](https://opensource.org/licenses/MIT)
-[![Voice Support](https://img.shields.io/badge/Accessibility-Voice--Enabled-blue)](#)
-[![Location: Karachi](https://img.shields.io/badge/Region-Karachi--Specific-orange)](#)
-
-E-Sarkari Rehnuma is not just a guide—it is a digital ecosystem designed to bridge the gap between citizens and public services. Built with a focus on **Elderly Accessibility** and **Low-Literacy Inclusivity**, it provides a voice-first experience for navigating government and healthcare procedures.
+**Lead Developer:** [JAWAD ALI]  
+**Live Demo:** [https://e-sarkari-rehnuma.onrender.com/](https://e-sarkari-rehnuma.onrender.com/)  
+**Deployment Region:** Karachi, Sindh
 
 ---
 
-**Lead Developer:** [JAWAD ALI]
-
-## Key Advanced Features
-
-### AI Voice & Chatbot Ecosystem
-* **Dual-Language Voice Engine:** Full voice support in English & Urdu with a **Speed Adjuster** for elderly comfort.
-* **Voice-Activated Chatbot:** A smart assistant that recognizes keywords, answers verbally, and supports voice input for hands-free navigation.
-* **Mute Toggle:** Instant control over audio for privacy in public spaces.
-
-### Smart Healthcare Navigator (Symptom Checker)
-* **Department Routing:** Input symptoms to find the exact hospital department you need.
-* **Curated Hospital Data:** Real-time data for Karachi's top facilities. Provides one **Government** and one **Private** recommendation for every department.
-* **Direct Action:** Includes verified contact numbers and integrated Google Maps data for instant navigation.
-
-###  District & DC Office Locator
-* **Location Intelligence:** A specialized tool that identifies your Karachi district and maps the exact DC office responsible for your area.
-
-### 📋 The "Office-Ready" Toolbox
-* **Document Checklist:** Dynamic lists of exactly what to carry.
-* **Pro-Tips & Mistakes to Avoid:** Wisdom-based guidance to ensure your application is accepted on the first visit.
-* **Progress Tracker:** Visual journey mapping so you know exactly where you stand in a procedure.
-
-### Social Integration
-* **WhatsApp Share:** Send complete service guides and document checklists to family or friends with a single click.
+### 🟢 Project Vision
+**E-Sarkari Rehnuma** is a specialized civic-tech ecosystem designed to bridge the digital divide. Built with a focus on **inclusive design**, the platform simplifies complex bureaucratic and medical procedures through a bilingual, voice-first interface engineered specifically for elderly users and those with varying levels of literacy.
 
 ---
 
-## Tech Stack & Skills
-* **Frontend:** React, Tailwind CSS, Framer Motion (Glassmorphism UI).
-* **Backend:** Node.js, Express.
-* **Database:** PostgreSQL with Drizzle ORM.
-* **Intelligence:** Custom Keyword Recognition Logic & Speech Synthesis API.
-* **Data:** CSV-based automated seeding for 12+ essential services.
+### 🚀 Key Capabilities
+
+| Feature | Description |
+| :--- | :--- |
+| **Voice Ecosystem** | Bilingual TTS with adjustable playback speeds and voice-to-text input. |
+| **Symptom Checker** | Algorithmic routing to correct medical departments based on symptoms. |
+| **Hospital Registry** | Verified data for Karachi’s top Public & Private healthcare institutions. |
+| **District Intelligence** | Precision mapping of user locations to relevant Deputy Commissioner (DC) offices. |
+| **Document Suitcase** | Dynamic checklists and "Mistakes to Avoid" modules for office readiness. |
+| **WhatsApp Bridge** | Instant sharing of procedural guides and document lists for community support. |
 
 ---
 
-## Project Structure
-* `server/storage.ts`: Handles automated database seeding and real-world hospital/DC office data mapping.
-* `client/src/pages/Home.tsx`: The bilingual, glass-themed landing page.
-* `shared/schema.ts`: Defines the relational architecture for services and step-by-step procedures.
+### 🛠️ Technical Architecture
+
+#### **Frontend Engineering**
+* **Framework:** React.js & TypeScript
+* **Styling:** Tailwind CSS (Custom "Institutional Glassmorphism" Theme)
+* **Animations:** Framer Motion (State-driven UI transitions for a fluid UX)
+* **Icons:** Lucide React (Standardized iconography)
+
+#### **Backend & Intelligence**
+* **Server:** Node.js & Express API
+* **Database:** PostgreSQL with Drizzle ORM (Relational Mapping)
+* **Accessibility:** Web Speech API for real-time Synthesis and Recognition.
+* **Data Integrity:** Automated CSV-to-SQL Seeding Engine for seamless updates.
 
 ---
 
-## Accessibility Mission
-The core mission of E-Sarkari Rehnuma is to ensure that technology serves those who need it most. By combining **Urdu Nastaliq typography**, **Large Text Modes**, and **Universal Voice Support**, we have made government and health services accessible to the elderly and the less tech-savvy.
+### ♿ Accessibility Commitment
+The architecture of E-Sarkari Rehnuma prioritizes inclusivity. By implementing **Urdu Nastaliq typography**, high-contrast visual elements, and universal voice support, the platform ensures that essential information is accessible to all demographics, regardless of technological proficiency.
 
 ---
 
-**Developed with 💚 for the citizens of Karachi.**
+### 📂 How it Works
+1. **The Core:** The system scans keywords from user voice/text input to provide relevant guidance.
+2. **The Seeder:** Data is managed via `services.csv` and `steps.csv`, ensuring the platform can scale to hundreds of services easily.
+3. **The UX:** Large buttons and audio-first feedback loops minimize "procedural anxiety" for first-time users.
+
+---
+
+**Developed and Maintained by:** [JAWAD ALI]  
+**Contact:** [Jawadaliii986@gmail.com]
