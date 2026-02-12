@@ -1,5 +1,3 @@
-# E-Rehnuma
-
 # 🏛️ E-Sarkari Rehnuma (ای-سرکاری رہنما)
 **A Comprehensive AI-Powered Civic Assistant for Pakistan.**
 
