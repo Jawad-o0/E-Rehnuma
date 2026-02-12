@@ -43,6 +43,14 @@
 
 ---
 
+### 📱 Mobile-First Engineering
+Recognizing that **90% of users** interact with civic services while "in the field," the platform is engineered with a **Mobile-First UX strategy**:
+* **Thumb-Friendly Navigation:** Optimized touch targets for one-handed use in crowded environments.
+* **Low-Bandwidth Optimization:** Designed to perform reliably on mobile data (3G/4G).
+* **Field Utility:** Persistent access to emergency numbers and WhatsApp sharing for real-time document coordination.
+
+---
+
 ### ♿ Accessibility Commitment
 The architecture of E-Sarkari Rehnuma prioritizes inclusivity. By implementing **Urdu Nastaliq typography**, high-contrast visual elements, and universal voice support, the platform ensures that essential information is accessible to all demographics, regardless of technological proficiency.
 
