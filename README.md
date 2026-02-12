@@ -1,7 +1,7 @@
 # E-SARKARI REHNUMA (ای-سرکاری رہنما)
 > **An AI-Powered Accessibility Framework for Public Service Navigation in Pakistan**
 
-**Lead Developer:** [JAWAD ALI]  
+**Lead Developer:** JAWAD ALI  
 **Live Demo:** [https://e-sarkari-rehnuma.onrender.com/](https://e-sarkari-rehnuma.onrender.com/)  
 **Deployment Region:** Karachi, Sindh
 
@@ -53,5 +53,5 @@ The architecture of E-Sarkari Rehnuma prioritizes inclusivity. By implementing *
 
 ---
 
-**Developed and Maintained by:** [JAWAD ALI]  
+**Developed and Maintained by:** JAWAD ALI  
 **Contact:** [Jawadaliii986@gmail.com]
