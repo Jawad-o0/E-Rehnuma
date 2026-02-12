@@ -22,6 +22,7 @@
 | **District Intelligence** | Precision mapping of user locations to relevant Deputy Commissioner (DC) offices. |
 | **Document Suitcase** | Dynamic checklists and "Mistakes to Avoid" modules for office readiness. |
 | **WhatsApp Bridge** | Instant sharing of procedural guides and document lists for community support. |
+| **Elderly Mode UX** | A high-focus mode that enlarges typography and transitions the interface into a single-step-per-page wizard to eliminate cognitive overload. |
 
 ---
 
