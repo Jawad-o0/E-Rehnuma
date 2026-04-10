@@ -12,7 +12,7 @@
 
 ---
 
-### 🚀 Key Capabilities
+### Key Capabilities
 
 | Feature | Description |
 | :--- | :--- |
@@ -27,7 +27,7 @@
 
 ---
 
-### 🛠️ Technical Architecture
+### Technical Architecture
 
 #### **Frontend Engineering**
 * **Framework:** React.js & TypeScript
