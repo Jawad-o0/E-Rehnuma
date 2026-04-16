@@ -51,7 +51,7 @@ Recognizing that **90% of users** interact with civic services while "in the fie
 
 ---
 
-### ♿ Accessibility Commitment
+### Accessibility Commitment
 The architecture of E-Sarkari Rehnuma prioritizes inclusivity. By implementing **Urdu Nastaliq typography**, high-contrast visual elements, and universal voice support, the platform ensures that essential information is accessible to all demographics, regardless of technological proficiency.
 
 ---
