@@ -1,7 +1,7 @@
 <div align="center">
 
 <h1>
-  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=900&size=38&duration=3000&pause=1000&color=16A34A&center=true&vCenter=true&width=700&lines=E-SARKARI+REHNUMA;%D8%A7%DB%8C-%D8%B3%D8%B1%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B1%DB%81%D9%86%D9%85%D8%A7" alt="E-SARKARI REHNUMA" />
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=1000&size=58&duration=300&pause=1000&color=16A34A&center=true&vCenter=true&width=700&lines=E-SARKARI+REHNUMA;%D8%A7%DB%8C-%D8%B3%D8%B1%DA%A9%D8%A7%D8%B1%DB%8C+%D8%B1%DB%81%D9%86%D9%85%D8%A7" alt="E-SARKARI REHNUMA" />
 </h1>
 
 <p align="center">
